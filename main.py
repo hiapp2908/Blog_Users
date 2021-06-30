@@ -94,7 +94,7 @@ class Comment(db.Model):
 # db.session.query(Users).delete()
 # db.session.commit()
 
-# db.create_all()
+db.create_all()
 
 
 @app.route('/')
