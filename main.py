@@ -10,6 +10,7 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import CreatePostForm, LoginForm, RegistrationForm, CommentForm
 from flask_gravatar import Gravatar
 from functools import wraps
+import psycopg2
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("secret_key")
